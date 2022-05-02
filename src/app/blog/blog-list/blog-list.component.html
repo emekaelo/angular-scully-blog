@@ -1,1 +1,7 @@
-<p>blog-list works!</p>
+<div>
+  <ul>
+    <li *ngFor="let post of links$ | async">
+    <a [href]="post.route">{{post.title}}</a>
+    </li>
+  </ul>
+</div>

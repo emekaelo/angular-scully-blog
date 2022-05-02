@@ -1,3 +1,16 @@
-<li >
-  <a [href]="post.route">{{post.title}}</a>
+<li>
+  <a [href]="post.route" class=" w-full lg:max-w-full lg:flex hover:bg-gray-100">
+    <div
+      class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+      [style.background-image]="'url(' + (post['image'] || 'https://images.unsplash.com/photo-1496494118863-9cf5d1e70cd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') + ')'"
+      title="Mountain">
+    </div>
+    <div
+      class="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <div class="text-gray-900 font-bold text-xl mb-2">{{post.title}}</div>
+        <p class="text-gray-700 text-base">{{post['seo']?.metaDescription || post['description']}}</p>
+      </div>
+    </div>
+  </a>
 </li>

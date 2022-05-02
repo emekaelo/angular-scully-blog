@@ -1,7 +1,5 @@
 <div>
   <ul>
-    <li *ngFor="let post of links$ | async">
-    <a [href]="post.route">{{post.title}}</a>
-    </li>
+    <app-blog-card [post]="post" *ngFor="let post of links$ | async"></app-blog-card>
   </ul>
 </div>

@@ -20,6 +20,6 @@ export class BlogListComponent implements OnInit {
 
   getPublishedPosts() {
     this.links$ = this.links$.pipe(map((links) => links.filter((link) =>
-      link.route.startsWith('/blog/'))),tap((val) => console.log(val)));
+      link.route.startsWith('/blog/'))));
   }
 }

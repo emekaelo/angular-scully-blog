@@ -10,9 +10,11 @@ const routes: Routes = [
     path: '',
     component: BlogComponent,
     children: [
+      {path: ':slug', component: BlogPostComponent},
       {path: '', component: BlogListComponent},
-      {path: ':slug', component: BlogPostComponent},]
-  }
+      {path: '**', redirectTo:'', pathMatch: 'full'},
+    ]
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,25 @@
+---
+label: Blog post with generated frontmatter
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: published
+  label: published
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: number
+  name: rating
+  label: rating

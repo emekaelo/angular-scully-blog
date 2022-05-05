@@ -12,7 +12,6 @@ const routes: Routes = [
     children: [
       {path: ':slug', component: BlogPostComponent},
       {path: '', component: BlogListComponent},
-      {path: '**', redirectTo:'', pathMatch: 'full'},
     ]
   },
 ];

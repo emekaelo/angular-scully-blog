@@ -6,6 +6,7 @@ This is the repository for the Angular blog demo with Netlify CMS and Forestry C
 The tools used to build the project include;
 - Angular version 13.3
 - Scully
+- Tailwind
 - Netlify CMS
 - Forestry CMS
 

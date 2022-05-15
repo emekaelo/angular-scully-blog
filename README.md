@@ -1,26 +1,32 @@
 # AngularBlog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+This is the repository for the Angular blog demo with Netlify CMS and Forestry CMS integration deployed on Netlify.
 
-## Development server
+## Tech stack
+The tools used to build the project include;
+- Angular version 13.3
+- Scully
+- Netlify CMS
+- Forestry CMS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Getting started
+After cloning the project, run the command:
+```bash
+npm install
+```
+Use the command below to run the angular and scully build commands:
+```
+npm run build
+```
+Serve the angular app:
+```
+ng serve
+```
+Serve the scully version which is the static site:
+```
+npx scully serve
+```
+Navigate to http://localhost:4200/ to see the Angular app and http://localhost:1668/ to see the scully static site
 
 ## Further help
 
